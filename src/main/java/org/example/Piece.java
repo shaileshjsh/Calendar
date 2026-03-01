@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Piece {
     private int [][] shape;
-    private int pieceNum;
+    private final int pieceNum;
 
     public Piece(int[][] shape, int pieceNum) {
         this.shape = shape;
@@ -34,9 +34,7 @@ public class Piece {
         int [][] temp = new int[4][4];
         int n;
         for(int p=0; p<4; p++){
-            for(int q=0; q<4; q++){
-                temp[p][q] = shape[p][q];
-            }
+            System.arraycopy(shape[p], 0, temp[p], 0, 4);
         }
         for(int t=0; t<numOfRotations; t++) {
             for (int i = 0; i < 4; i++) {
@@ -47,9 +45,7 @@ public class Piece {
                 }
             }
             for(int p=0; p<4; p++){
-                for(int q=0; q<4; q++){
-                    temp[p][q] = rotated[p][q];
-                }
+                System.arraycopy(rotated[p], 0, temp[p], 0, 4);
             }
         }
         //shape = rotated;

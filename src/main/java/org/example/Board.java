@@ -1,7 +1,7 @@
 package org.example;
 
 public class Board {
-    private int [][] boardShape = {{0,0,0,0,0,0,1},
+    private final int [][] boardShape = {{0,0,0,0,0,0,1},
             {0,0,0,0,0,0,1},
             {0,0,0,0,0,0,0},
             {0,0,0,0,0,0,0},
@@ -19,9 +19,7 @@ public class Board {
 
     public void setBoardShape(int[][] boardShape) {
         for(int i=0;i<7;i++){
-            for(int j=0;j<7; j++){
-                this.boardShape[i][j]=boardShape[i][j];
-            }
+            System.arraycopy(boardShape[i], 0, this.boardShape[i], 0, 7);
         }
     }
 

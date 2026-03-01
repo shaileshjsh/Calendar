@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Board with expected date");
         System.out.println("============================");
         printArray(board.getBoardShape());
-        System.out.println("");
+        System.out.println();
         System.out.println();
 
         boolean boardSolved = false;
