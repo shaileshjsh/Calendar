@@ -1,11 +1,11 @@
 # Calendar Puzzle Solution
 
-This project provides a comprehensive solution to the calendar puzzle involving date and time calculations. The solution encompasses various algorithms and techniques for determining valid date configurations based on specific constraints.
+This project provides a comprehensive solution to the 'Calendar - A puzzle a day' (often DragonFjord brand).
+Reference: https://www.youtube.com/watch?v=PgPwxMGzBOE
 
 ## Features
-- Efficient date calculation algorithms
-- Support for leap year calculations
-- User-friendly interface for inputting parameters
+- Multiple solution to each possible date in the calendar
+- No GUI. The solution is printed on console.
 
 ## Getting Started
-To get started with the project, clone the repository and follow the instructions provided in the documentation.
+- Once the solution is provided by the program, arrange the pices in order left to right and top to bottom.
